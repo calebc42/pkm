@@ -1,5 +1,7 @@
-#+TITLE: Coppermind – Personal Knowledge & System Monorepo
+#+TITLE: Personal Knowledge Vault
 #+STARTUP: content
+
+[[https://github.com/calebc42/pkm/actions/workflows/ci.yml/badge.svg]]
 
 * 10-second elevator pitch
   One Git repository that holds my entire digital life:
@@ -16,8 +18,8 @@
   | index.org     | auto-generated dashboard of the whole repo    |
 
 * How to bootstrap a new machine
-  1. =git clone <pi4:/srv/git/coppermind.git ~/coppermind=
-  2. =cd ~/coppermind && make init=   (installs packages, tangles config)
+  1. =git clone <pi4:/srv/git/pkm.git ~/pkm=
+  2. =cd ~/pkm && make init=   (installs packages, tangles config)
   3. open =index.org= in Emacs → press =C-c C-v= to rebuild dashboard
 
 * Daily touch-points
@@ -28,4 +30,4 @@
 * Licence & backup
   All text is CC-BY-SA 4.0 unless noted.
   Automatic encrypted mirror: =rclone sync . crypt-remote:coppermind=
-#+TITLE: Personal Knowledge Vault
+
