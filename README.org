@@ -1,0 +1,31 @@
+#+TITLE: Coppermind – Personal Knowledge & System Monorepo
+#+STARTUP: content
+
+* 10-second elevator pitch
+  One Git repository that holds my entire digital life:
+  configs, notes, tasks, diary, published site, and the scripts that glue them together.
+  Clone it anywhere, run =make= (or =M-x coppermind-build=), and you’re home.
+
+* What lives where (1-level deep)
+  | path          | purpose                                       |
+  |---------------+-----------------------------------------------|
+  | projects/     | actionable TODOs, sprint files                |
+  | resources/    | Notes, resources, reference files             |
+  | reviews/      | weekly / monthly / yearly retrospectives      |
+  | dashboard.org | start-up file, plain-text desktop environment |
+  | index.org     | auto-generated dashboard of the whole repo    |
+
+* How to bootstrap a new machine
+  1. =git clone <pi4:/srv/git/coppermind.git ~/coppermind=
+  2. =cd ~/coppermind && make init=   (installs packages, tangles config)
+  3. open =index.org= in Emacs → press =C-c C-v= to rebuild dashboard
+
+* Daily touch-points
+  - capture → =M-x org-capture= (bound to =C-c c=)
+  - diary → =C-c d= opens =reviews/diary.org=
+  - deploy lab change → edit → commit → push → ssh to target → =git pull=
+
+* Licence & backup
+  All text is CC-BY-SA 4.0 unless noted.
+  Automatic encrypted mirror: =rclone sync . crypt-remote:coppermind=
+#+TITLE: Personal Knowledge Vault
