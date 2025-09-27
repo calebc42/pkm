@@ -6,7 +6,7 @@
 * 10-second elevator pitch
   One Git repository that holds my entire digital life:
   configs, notes, tasks, diary, published site, and the scripts that glue them together.
-  Clone it anywhere, run =make= (or =M-x coppermind-build=), and you’re home.
+  Clone it anywhere, run =make= (or =M-x pkm-build=), and you’re home.
 
 * What lives where (1-level deep)
   | path          | purpose                                       |
@@ -29,5 +29,6 @@
 
 * Licence & backup
   All text is CC-BY-SA 4.0 unless noted.
-  Automatic encrypted mirror: =rclone sync . crypt-remote:coppermind=
+
+  Automatic encrypted mirror: =rclone sync . crypt-remote:pkm=
 
